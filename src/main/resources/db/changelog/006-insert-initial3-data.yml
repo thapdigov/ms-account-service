@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Bahruz Tapdigov
+      changes:
+        - insert:
+            tableName: account_user
+            columns:
+              - column: {name: id, value: 8}
+              - column: {name: username, value: 'Eldar@gmail.com'}
+
+        - insert:
+            tableName: account
+            columns:
+              - column: {name: user_id, value: 8}
+              - column: {name: currency, value: 'USD'}
+              - column: {name: balance, value: 6000.00}
+        - insert:
+            tableName: account
+            columns:
+              - column: {name: user_id, value: 8}
+              - column: {name: currency, value: 'EUR'}
+              - column: {name: balance, value: 5000.00}
+        - insert:
+            tableName: account
+            columns:
+              - column: {name: user_id, value: 8}
+              - column: {name: currency, value: 'AZN'}
+              - column: {name: balance, value: 4500.00}
